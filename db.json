@@ -1,0 +1,64 @@
+{
+  "Posts": [
+    {
+      "id": "1",
+      "image": "https://c4.wallpaperflare.com/wallpaper/639/930/565/cairo-wallpaper-preview.jpg",
+      "title": "Cairo",
+      "content": "Cairo, the sprawling capital of Egypt, is a vibrant city known for its rich history and cultural heritage. Home to the iconic Pyramids of Giza and the Sphinx, Cairo offers a captivating blend of ancient wonders and modern urban life. The bustling streets, bustling bazaars, and the serene Nile River create a dynamic atmosphere, making it a fascinating destination for travelers."
+    },
+    {
+      "id": "2",
+      "image": "https://e0.pxfuel.com/wallpapers/651/946/desktop-wallpaper-late-evening-in-cairo.jpg",
+      "title": "Cairo",
+      "content": "Cairo, the bustling capital of Egypt, is a city where ancient history and modern life intersect. Renowned for its iconic landmarks like the Pyramids of Giza and the Sphinx, Cairo also boasts vibrant markets, lively streets, and a rich cultural scene. This dynamic metropolis along the Nile River offers a unique blend of historical significance and contemporary charm."
+    },
+    {
+      "id": "3",
+      "image": "https://wandrlymagazine.com/wp-content/uploads/fly-images/19266/starlink-satellite-internet-camping-750x400-c.jpg",
+      "title": "Fayoum",
+      "content": "Wadi Al-Hitan, or the Valley of the Whales, is a UNESCO World Heritage site in Egypt's Western Desert. Known for its well-preserved ancient whale fossils, it offers invaluable insights into marine evolution and features a stunning desert landscape."
+    },
+    {
+      "id": "4",
+      "image": "https://www.traveldailymedia.com/assets/2019/07/Alexandria-Egypt.jpg",
+      "title": "Alexanderia",
+      "content": "Alexandria, a historic city on Egypt's Mediterranean coast, is famed for its rich cultural heritage and ancient landmarks. Known for the Great Library and the Lighthouse of Alexandria, one of the Seven Wonders of the Ancient World, it blends a storied past with vibrant modern life. Its beautiful seaside setting and historical significance make Alexandria a captivating destination."
+    },
+    {
+      "id": "5",
+      "image": "https://th.bing.com/th/id/R.b5d0ea2557162d7ff4ec63ccf6f5a962?rik=7BPldnQyAdqswg&pid=ImgRaw&r=0",
+      "title": "Luxor",
+      "content": "Luxor, often called the world's greatest open-air museum, is located in southern Egypt along the Nile River. Renowned for its ancient temples, including Karnak and Luxor Temple, and the Valley of the Kings, Luxor is a treasure trove of Pharaonic history. This city, rich in archaeological wonders, attracts visitors from around the globe seeking to explore its remarkable past."
+    },
+    {
+      "id": "6",
+      "image": "https://img.atlasobscura.com/9g-7_SfQM-TYnKYUfxLVfdP4APIWGO0a_LhPJYOJsQU/rs:fill:780:520:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy82YWRh/NjcwNzZlZTViNTFk/NTlfMzA0MjU2NDE3/MzBfN2VhYmIyZTA3/ZV9vICgxKS5qcGc.jpg",
+      "title": "South-Sinia",
+      "content": "The Blue Hole, located near Dahab on Egypt's Sinai Peninsula, is a world-famous dive site renowned for its stunning underwater scenery. This deep, natural sinkhole, surrounded by vibrant coral reefs, attracts divers from around the globe seeking adventure and the chance to explore its mysterious depths. Its crystal-clear waters and diverse marine life make the Blue Hole a captivating destination for underwater enthusiasts."
+    },
+    {
+      "id": "7",
+      "image": "https://cdn.audleytravel.com/960/685/70/1326175-aswan.jpg",
+      "title": "Aswan",
+      "content": "Aswan, a picturesque city in southern Egypt, is renowned for its stunning stretch of the Nile River. This serene area is dotted with scenic islands, ancient temples like Philae, and the impressive Aswan High Dam. The tranquil waters, lush greenery, and rich history make Aswan's Nile a captivating destination for travelers seeking both relaxation and cultural exploration."
+    },
+    {
+      "id": "e96b",
+      "title": "Port said",
+      "image": "https://i0.wp.com/tayaramuse.com/wp-content/uploads/2019/04/PortSaid-166.jpg?resize=1024%2C682&ssl=1",
+      "content": "Port Said, a vibrant city in northeastern Egypt, sits at the northern entrance of the Suez Canal. Known for its strategic importance in global trade, the city boasts a rich maritime history and unique architecture. With its bustling port, charming waterfront, and blend of modern and historic attractions, Port Said offers a dynamic and culturally rich experience for visitors.\n\n\n\n\n\n\n"
+    },
+    {
+      "id": "07c2",
+      "title": "red sea",
+      "image": "https://th.bing.com/th/id/R.dbf6a0bbdad0beef3e97fdd52794d402?rik=rxVnPFl834Jt9Q&riu=http%3a%2f%2fwww.redseagovernment.gov.sd%2fimages%2ftemp%2f44.jpg&ehk=d9q%2fR97bCt4isRDs6BzxR5EwUv2u3DFx4bWuqN9RRZM%3d&risl=&pid=ImgRaw&r=0",
+      "content": "governate"
+    },
+    {
+      "id": "e931",
+      "title": "red sea",
+      "image": "https://th.bing.com/th/id/R.dbf6a0bbdad0beef3e97fdd52794d402?rik=rxVnPFl834Jt9Q&riu=http%3a%2f%2fwww.redseagovernment.gov.sd%2fimages%2ftemp%2f44.jpg&ehk=d9q%2fR97bCt4isRDs6BzxR5EwUv2u3DFx4bWuqN9RRZM%3d&risl=&pid=ImgRaw&r=0",
+      "content": "governate"
+    }
+  ]
+}

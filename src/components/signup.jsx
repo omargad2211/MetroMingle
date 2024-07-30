@@ -97,10 +97,10 @@ const SignUpForm = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen text-slate-200 bg-slate-800">
+    <div className="flex justify-center gap-20 items-center min-h-screen text-slate-200 bg-orange-300">
       <form
         onSubmit={handleRegister}
-        className="bg-transparent p-8 rounded shadow-md w-full max-w-md"
+        className="bg-teal-600 p-8 rounded shadow-md w-full max-w-md"
       >
         <h2 className="text-2xl font-bold mb-6 text-center">Sign Up</h2>
 
@@ -201,16 +201,29 @@ const SignUpForm = () => {
 
         <div className="flex justify-between items-center mt-6">
           <Link to="/">
-            <button type="button" className="btn btn-secondary">
+            <button type="button" className="btn bg-orange-600 text-white">
               Cancel
             </button>
           </Link>
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn text-white bg-teal-400">
             Sign Up
           </button>
         </div>
         {error && <span className="text-red-500 mt-4 block">{error}</span>}
       </form>
+      <div className="max-w-96 text-white text-xl">
+        Welcome to <span className="text-xl font-bold text-teal-500">MetroMingle</span>  your gateway to discovering the
+        vibrant stories and hidden gems of cities across Egypt! Our platform is
+        dedicated to bringing you the most authentic and engaging experiences
+        from people who live and breathe the essence of their cities. Whether
+        you’re a local seeking fresh perspectives or a traveler eager to explore
+        Egypt beyond the typical guidebooks, you’ll find a treasure trove of
+        blogs filled with personal anecdotes, insider tips, and breathtaking
+        visuals. Join our community of passionate storytellers and immerse
+        yourself in the rich cultural tapestry and dynamic urban life that Egypt
+        has to offer. Let’s explore, connect, and celebrate the spirit of
+        Egyptian cities together!
+      </div>
     </div>
   );
 };

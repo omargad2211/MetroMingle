@@ -134,21 +134,24 @@ export default function Login() {
   };
 
   return (
-    <div className="hero text-slate-200 bg-slate-800 min-h-screen">
+    <div className="hero text-slate-200 min-h-screen">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left">
-          <h1 className="text-5xl font-bold">Login now!</h1>
-          <p className="py-6">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
+          <h1 className="text-5xl text-teal-500 font-bold">Login now!</h1>
+          <p className="py-6 text-orange-500">
+            Discover the heart of Egypt through the eyes of its residents. Our
+            platform offers a unique glimpse into the vibrant cities of Egypt
+            with personal stories, insider tips, and local insights. Whether
+            you’re exploring from afar or discovering your own city, dive in and
+            experience the rich culture and dynamic life of Egypt like never
+            before!
           </p>
         </div>
-        <div className="card bg-transparent w-full max-w-sm shrink-0 shadow-2xl">
+        <div className="card bg-slate-600 w-full max-w-sm shrink-0 shadow-2xl">
           <form className="card-body" onSubmit={handleLogin}>
             <div className="form-control">
               <label className="label">
-                <span className="label-text">Email</span>
+                <span className="label-text text-white">Email</span>
               </label>
               <input
                 type="email"
@@ -163,7 +166,7 @@ export default function Login() {
             </div>
             <div className="form-control">
               <label className="label">
-                <span className="label-text">Password</span>
+                <span className="label-text text-white">Password</span>
               </label>
               <input
                 type="password"
@@ -195,14 +198,6 @@ export default function Login() {
               <Link className="btn btn-secondary" to="/signup">
                 Sign Up
               </Link>
-              <button
-                type="button"
-                className="btn btn-outline mt-3"
-                // You can add Google Sign-In functionality here if needed
-              >
-                {/* Placeholder for Google Sign-In */}
-                Sign in with Google
-              </button>
             </div>
           </form>
         </div>

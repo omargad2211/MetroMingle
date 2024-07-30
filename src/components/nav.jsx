@@ -172,54 +172,23 @@ export default function Nav() {
   return (
     <div className="navbar bg-teal-600 text-white px-4 lg:px-8 py-2">
       <div className="navbar-start">
-        <div className="dropdown">
-          <div
-            tabIndex={0}
-            role="button"
-            className="btn btn-ghost btn-circle lg:mr-4"
-            aria-label="Menu"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16M4 18h7"
-              />
-            </svg>
-          </div>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content text-slate-800 bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-          >
-            <li>
-              <NavLink to="/posts" className="hover:text-indigo-500">
-                Posts
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/portfolio" className="hover:text-indigo-500">
-                Portfolio
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/about" className="hover:text-indigo-500">
-                About
-              </NavLink>
-            </li>
-          </ul>
-        </div>
+        <NavLink
+          to="/posts"
+          className="btn btn-ghost items-center  text-xl flex  hover:text-orange-500 gap-2"
+        >
+          <svg fill="currentColor" viewBox="0 0 16 16" height="1em" width="1em">
+            <path
+              fillRule="evenodd"
+              d="M2 2a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2H2zM1 4a1 1 0 011-1h12a1 1 0 011 1v8a1 1 0 01-1 1H2a1 1 0 01-1-1V4zm7.5.5a.5.5 0 00-1 0v7a.5.5 0 001 0v-7zM2 5.5a.5.5 0 01.5-.5H6a.5.5 0 010 1H2.5a.5.5 0 01-.5-.5zm0 2a.5.5 0 01.5-.5H6a.5.5 0 010 1H2.5a.5.5 0 01-.5-.5zm0 2a.5.5 0 01.5-.5H6a.5.5 0 010 1H2.5a.5.5 0 01-.5-.5zM10.5 5a.5.5 0 00-.5.5v3a.5.5 0 00.5.5h3a.5.5 0 00.5-.5v-3a.5.5 0 00-.5-.5h-3zM13 8h-2V6h2v2z"
+            />
+          </svg>
+          <p>posts</p>
+        </NavLink>
       </div>
 
       <div className="navbar-center flex-1 flex justify-center items-center lg:mx-8">
         <NavLink
-          className="btn btn-ghost text-xl flex items-center hover:text-orange-500 gap-2"
+          className="btn btn-ghost text-3xl flex items-center hover:text-orange-500 gap-2"
           to="/"
         >
           MetroMingle
@@ -228,27 +197,10 @@ export default function Nav() {
       </div>
 
       <div className="navbar-end flex items-center space-x-4 lg:space-x-6">
-        <button className="btn btn-ghost hover:text-orange-500 btn-circle">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-            />
-          </svg>
-        </button>
-
         {/* Conditional Rendering for Login/Logout */}
         {currentUser ? (
           <button
-            className="text-white cursor-pointer flex items-center gap-1 hover:text-orange-500"
+            className="btn btn-ghost text-xl flex items-center hover:text-orange-500 gap-2"
             onClick={handleLogout} // Use the logout handler
           >
             <svg
@@ -265,7 +217,7 @@ export default function Nav() {
         ) : (
           <NavLink
             to="/login"
-            className="text-white cursor-pointer flex items-center gap-1 hover:text-orange-500"
+            className="btn btn-ghost text-xl flex items-center hover:text-orange-500 gap-2"
           >
             Login
             <svg
@@ -280,7 +232,7 @@ export default function Nav() {
           </NavLink>
         )}
 
-        <button className="btn btn-ghost hover:text-orange-500 btn-circle relative">
+        {/* <button className="btn btn-ghost hover:text-orange-500 btn-circle relative">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"
@@ -296,18 +248,28 @@ export default function Nav() {
             />
           </svg>
           <span className="badge badge-xs badge-primary absolute top-0 right-0"></span>
-        </button>
+        </button> */}
 
         {currentUser && (
-          <NavLink to="/profile">
-            <div className="ml-3">
-              <div
+          <NavLink
+            className="btn btn-ghost text-xl flex items-center hover:text-orange-500 gap-2"
+            to="/profile"
+          >
+          
+              {/* <div
                 className="h-10 w-10 bg-cover bg-center rounded-full border border-gray-200"
                 style={{
                   backgroundImage: `url(${currentUser?.photoURL})`,
                 }}
-              ></div>
-            </div>
+              >
+              </div> */}
+              <img
+                className="h-10 w-10 bg-cover bg-center rounded-full border border-gray-200"
+                src={currentUser?.photoURL}
+                alt=""
+              />
+              profile
+           
           </NavLink>
         )}
       </div>

@@ -73,7 +73,7 @@ const SignUpForm = () => {
             });
 
             // Redirect to login page
-            navigate("/login");
+            navigate("/posts");
           }
         );
       } else {
@@ -89,7 +89,7 @@ const SignUpForm = () => {
         await setDoc(doc(db, "usersPosts", res.user.uid), { messages: [] });
 
         // Redirect to login page
-        navigate("/login");
+        navigate("/posts");
       }
     } catch (err) {
       setError("Error creating user: " + err.message);
@@ -107,7 +107,11 @@ const SignUpForm = () => {
         <div className="mb-4">
           <label htmlFor="file">
             <img
-              src={img ? URL.createObjectURL(img) : "/src/assets/OIP.jpg"}
+              src={
+                img
+                  ? URL.createObjectURL(img)
+                  : "https://th.bing.com/th/id/OIP.hmLglIuAaL31MXNFuTGBgAAAAA?rs=1&pid=ImgDetMain"
+              }
               alt="Profile Preview"
               width="100px"
               className="rounded-full cursor-pointer mb-4"
@@ -136,7 +140,7 @@ const SignUpForm = () => {
             type="text"
             name="displayName"
             id="displayName"
-            className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring focus:border-blue-300"
+            className="w-full text-black px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring focus:border-blue-300"
             placeholder="Full Name"
             value={formData.displayName}
             onChange={handleChange}
@@ -152,7 +156,7 @@ const SignUpForm = () => {
             type="email"
             name="email"
             id="email"
-            className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring focus:border-blue-300"
+            className="w-full text-black px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring focus:border-blue-300"
             placeholder="Your Email"
             value={formData.email}
             onChange={handleChange}
@@ -168,7 +172,7 @@ const SignUpForm = () => {
             type="password"
             name="password"
             id="password"
-            className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring focus:border-blue-300"
+            className="w-full px-3 py-2 border text-black border-gray-300 rounded focus:outline-none focus:ring focus:border-blue-300"
             placeholder="Your Password"
             value={formData.password}
             onChange={handleChange}
@@ -187,7 +191,7 @@ const SignUpForm = () => {
             type="password"
             name="confirmPassword"
             id="confirmPassword"
-            className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring focus:border-blue-300"
+            className="w-full px-3 text-black py-2 border border-gray-300 rounded focus:outline-none focus:ring focus:border-blue-300"
             placeholder="Confirm Password"
             value={formData.confirmPassword}
             onChange={handleChange}

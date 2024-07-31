@@ -13,17 +13,19 @@ export default function Home() {
         backgroundImage: `url("assets/Untitled design (1).jpg")`,
       }}
     >
-      <div className="text-center text-white">
+      <div className="text-center flex flex-col justify-center items-center text-white">
         <h1 className="text-5xl flex font-bold mb-4">
           Welcome to MetroMingle <GiFlyingTrout />
         </h1>
-        <p className="text-xl mb-8">
-          Connect with friends and the world around you.
+        <p className="text-xl w-2/3 mb-8">
+          Discover the vibrant cities of Egypt! From ancient wonders to modern
+          marvels, explore the rich history and culture of Egypt’s urban
+          treasures and find your next adventure in the heart of the Nile.
         </p>
 
         {/* Conditionally render buttons based on currentUser */}
         {!currentUser ? (
-          <div className="space-x-4">
+          <div className="space-x-4 mt-28">
             <Link to={"/signup"}>
               <button className="btn btn-primary">Sign Up</button>
             </Link>
@@ -37,7 +39,7 @@ export default function Home() {
             </Link>
           </div>
         ) : (
-          <div className="space-x-4">
+          <div className="space-x-4 mt-28">
             <p className="text-lg">
               Welcome back, {currentUser.displayName || "User"}!
             </p>

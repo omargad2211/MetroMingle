@@ -163,7 +163,7 @@ export default function Profile() {
         </aside>
 
         {/* Main Content */}
-        <main className="flex-grow bg-gray-50">
+        <main className="flex-grow w-1/2 bg-gray-50">
           <header className="flex justify-between items-center bg-white p-4 border-b">
             <h2 className="text-xl font-semibold">Profile</h2>
             <button className="btn btn-primary bg-orange-500 border-orange-700 hover:bg-teal-600 text-white btn-sm">Edit Profile</button>
@@ -196,9 +196,9 @@ export default function Profile() {
               </p>
               <div className="flex items-center space-x-2 mt-2">
                 <span className="text-gray-600">
-                  Location: San Francisco, CA
+                  Location: Dokki, Cairo.
                 </span>
-                <span className="text-gray-600">Joined: January 2020</span>
+                <span className="text-gray-600">Joined: July 2024</span>
               </div>
               <div className="flex space-x-4 mt-4">
                 <div>
@@ -256,7 +256,7 @@ export default function Profile() {
         </main>
 
         {/* Right Sidebar */}
-        <aside className="w-1/2 bg-gray-50 p-4 border-l">
+        <aside className="w-1/4 bg-gray-50 p-4 border-l">
           <div className="mb-4 flex flex-col">
             <h3 className="text-lg text-teal-500 font-semibold mb-2">
               Who to follow

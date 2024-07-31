@@ -100,18 +100,14 @@ const SignUpForm = () => {
     <div className="flex justify-center gap-20 items-center min-h-screen text-slate-200 bg-orange-300">
       <form
         onSubmit={handleRegister}
-        className="bg-teal-600 p-8 rounded shadow-md w-full max-w-md"
+        className="bg-teal-600 p-8 mt-7 mb-7  rounded shadow-md w-full max-w-md"
       >
         <h2 className="text-2xl font-bold mb-6 text-center">Sign Up</h2>
 
         <div className="mb-4">
           <label htmlFor="file">
             <img
-              src={
-                img
-                  ? URL.createObjectURL(img)
-                  : "https://th.bing.com/th/id/OIP.hmLglIuAaL31MXNFuTGBgAAAAA?rs=1&pid=ImgDetMain"
-              }
+              src={img ? URL.createObjectURL(img) : "/assets/OIP.jpeg"}
               alt="Profile Preview"
               width="100px"
               className="rounded-full cursor-pointer mb-4"

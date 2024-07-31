@@ -134,7 +134,7 @@ export default function Login() {
   };
 
   return (
-    <div className="hero text-slate-200 min-h-screen">
+    <div className="hero text-slate-200 bg-slate-100 min-h-screen">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left">
           <h1 className="text-5xl text-teal-500 font-bold">Login now!</h1>

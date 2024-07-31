@@ -100,7 +100,7 @@ const SignUpForm = () => {
     <div className="flex justify-center gap-20 items-center min-h-screen text-slate-200 bg-orange-300">
       <form
         onSubmit={handleRegister}
-        className="bg-teal-600 p-8 mt-7 mb-7  rounded shadow-md w-full max-w-md"
+        className="bg-teal-600 p-6 mt-7 mb-7  rounded shadow-md w-full max-w-md"
       >
         <h2 className="text-2xl font-bold mb-6 text-center">Sign Up</h2>
 
@@ -109,8 +109,7 @@ const SignUpForm = () => {
             <img
               src={img ? URL.createObjectURL(img) : "/assets/OIP.jpeg"}
               alt="Profile Preview"
-              width="100px"
-              className="rounded-full cursor-pointer mb-4"
+              className="rounded-full w-14 cursor-pointer mb-4"
             />
           </label>
           <input

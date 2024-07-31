@@ -5,6 +5,7 @@ import { FaRetweet } from "react-icons/fa6";
 import { BiHide } from "react-icons/bi";
 import Addpost from "../components/addpost";
 import { db } from "../firbase";
+import { Link } from "react-router-dom";
 
 import {
   collection,
@@ -605,9 +606,9 @@ const Tweet = ({
           ) : (
             <div className="mt-4 p-4 bg-gray-100 text-gray-600 text-center rounded">
               Please{" "}
-              <a href="/login" className="text-teal-600 underline">
+              <Link to='/login' className="text-teal-600 underline">
                 log in
-              </a>{" "}
+              </Link>{" "}
               to interact with this post.
             </div>
           )}

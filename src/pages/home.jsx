@@ -10,7 +10,7 @@ export default function Home() {
     <div
       className="min-h-screen flex flex-col items-center justify-center"
       style={{
-        backgroundImage: `url("public/assets/Untitled design (1).jpg")`,
+        backgroundImage: `url("public/assets/OIP.jpg")`,
       }}
     >
       <div className="text-center text-white">

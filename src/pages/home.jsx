@@ -41,10 +41,10 @@ export default function Home() {
         ) : (
           <div className="space-x-4 mt-28">
             <p className="text-lg">
-              Welcome back, {currentUser.displayName || "User"}!
+              Welcome back,<span className="font-bold text-orange-600 p-2 rounded-lg">{currentUser.displayName || "User"}!</span>
             </p>
             <button
-              className="btn btn-warning"
+              className="btn mt-3 btn-warning"
               onClick={() => {
                 // Add logout functionality here if needed
                 auth.signOut();

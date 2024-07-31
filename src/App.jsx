@@ -7,6 +7,8 @@ import Home from "./pages/home";
 import Posts from "./pages/posts";
 import Addpost from "./components/addpost";
 import Profile from "./pages/profile";
+import NotificationPage from "./pages/notifications";
+import MessagesPage from "./pages/messages";
 import { useContext } from "react";
 import { AuthContext } from "./context/AuthContext";
 function App() {
@@ -22,6 +24,8 @@ function App() {
         <Route path="/posts" element={<Posts posts={posts} />} />
         <Route path="/addpost" element={<Addpost />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/notifications" element={<NotificationPage />} />
+        <Route path="/messages" element={<MessagesPage />} />
       </Routes>
     </div>
   );

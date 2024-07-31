@@ -8,6 +8,7 @@ import { formatDistanceToNow } from "date-fns";
 
 
 import AccessibleForwardIcon from "@mui/icons-material/AccessibleForward";
+import { Link } from "react-router-dom";
 
 export default function Profile() {
   const { currentUser } = useContext(AuthContext);
@@ -25,8 +26,8 @@ export default function Profile() {
           <div className="p-4">
             <h1 className="text-2xl font-bold mb-4">MetroMingle</h1>
             <nav className="space-y-2">
-              <a
-                href="#"
+              <Link
+                to='/posts'
                 className="flex gap-4 items-center text-l font-medium px-4 py-2 text-gray-700 hover:bg-teal-500 hover:text-white rounded transition"
               >
                 <svg
@@ -38,7 +39,7 @@ export default function Profile() {
                   <path d="M946.5 505L560.1 118.8l-25.9-25.9a31.5 31.5 0 00-44.4 0L77.5 505a63.9 63.9 0 00-18.8 46c.4 35.2 29.7 63.3 64.9 63.3h42.5V940h691.8V614.3h43.4c17.1 0 33.2-6.7 45.3-18.8a63.6 63.6 0 0018.7-45.3c0-17-6.7-33.1-18.8-45.2zM568 868H456V664h112v204zm217.9-325.7V868H632V640c0-22.1-17.9-40-40-40H432c-22.1 0-40 17.9-40 40v228H238.1V542.3h-96l370-369.7 23.1 23.1L882 542.3h-96.1z" />
                 </svg>
                 Home
-              </a>
+              </Link>
               <a
                 href="#"
                 className="flex gap-4 items-center text-l font-medium px-4 py-2 text-gray-700 hover:bg-teal-500 hover:text-white rounded transition"
@@ -54,8 +55,8 @@ export default function Profile() {
                 </svg>
                 Explore
               </a>
-              <a
-                href="#"
+              <Link
+                to='/notifications'
                 className="flex gap-4 items-center text-l font-medium px-4 py-2 text-gray-700 hover:bg-teal-500 hover:text-white rounded transition"
               >
                 <svg
@@ -74,7 +75,7 @@ export default function Profile() {
                   />
                 </svg>{" "}
                 Notifications
-              </a>
+              </Link>
               <a
                 href="#"
                 className="flex gap-4 items-center text-l font-medium px-4 py-2 text-gray-700 hover:bg-teal-500 hover:text-white rounded transition"
@@ -165,7 +166,7 @@ export default function Profile() {
         <main className="flex-grow bg-gray-50">
           <header className="flex justify-between items-center bg-white p-4 border-b">
             <h2 className="text-xl font-semibold">Profile</h2>
-            <button className="btn btn-primary btn-sm">Edit Profile</button>
+            <button className="btn btn-primary bg-orange-500 border-orange-700 hover:bg-teal-600 text-white btn-sm">Edit Profile</button>
           </header>
 
           <section className="p-4">
@@ -255,25 +256,31 @@ export default function Profile() {
         </main>
 
         {/* Right Sidebar */}
-        <aside className="w-1/4 bg-gray-50 p-4 border-l">
-          <div className="mb-4">
-            <h3 className="text-lg font-semibold mb-2">Who to follow</h3>
+        <aside className="w-1/2 bg-gray-50 p-4 border-l">
+          <div className="mb-4 flex flex-col">
+            <h3 className="text-lg text-teal-500 font-semibold mb-2">
+              Who to follow
+            </h3>
             <FollowSuggestion
-              name="Jane Smith"
-              handle="@janesmith"
-              profileImage="https://via.placeholder.com/50"
+              name="omar gad"
+              handle="@omargad"
+              profileImage="https://scontent.fcai19-5.fna.fbcdn.net/v/t39.30808-6/356904138_1450160225743861_3617184216260463600_n.jpg?stp=cp6_dst-jpg&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=6253ES-I9PgQ7kNvgGw-Plb&_nc_ht=scontent.fcai19-5.fna&oh=00_AYBH9JelPxTpVqhctr0HzKtaCr3sdCLVcLIjSg4wnnSP9Q&oe=66AFC619"
             />
             <FollowSuggestion
-              name="Tom Johnson"
-              handle="@tomjohnson"
-              profileImage="https://via.placeholder.com/50"
+              name="ammar elbatal"
+              handle="@ammarbtl"
+              profileImage="https://scontent.fcai19-5.fna.fbcdn.net/v/t39.30808-6/217968151_991275661632322_9151115366027423106_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=pE2fv1l1rnkQ7kNvgGGybYR&_nc_ht=scontent.fcai19-5.fna&gid=AoK2VvsZt9WAoLsElprHgXH&oh=00_AYBE0kOQhpv4DZppH--LvWWrc2pMaTVQsGfZSWxKL18Ehg&oe=66AFD4DD"
             />
           </div>
           <div>
-            <h3 className="text-lg font-semibold mb-2">Trends for you</h3>
-            <Trend name="#ReactJS" tweets="120K" />
-            <Trend name="#JavaScript" tweets="90K" />
-            <Trend name="#TailwindCSS" tweets="60K" />
+            <h3 className="text-lg text-teal-500 font-semibold mb-2">
+              Trends for you
+            </h3>
+            <div className="text-orange-700">
+              <Trend name="#ReactJS" tweets="120K" />
+              <Trend name="#JavaScript" tweets="90K" />
+              <Trend name="#TailwindCSS" tweets="60K" />
+            </div>
           </div>
         </aside>
       </div>

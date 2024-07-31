@@ -140,7 +140,7 @@ const SignUpForm = () => {
             type="text"
             name="displayName"
             id="displayName"
-            className="w-full text-black px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring focus:border-blue-300"
+            className="w-full text-black bg-white px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring focus:border-blue-300"
             placeholder="Full Name"
             value={formData.displayName}
             onChange={handleChange}
@@ -156,7 +156,7 @@ const SignUpForm = () => {
             type="email"
             name="email"
             id="email"
-            className="w-full text-black px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring focus:border-blue-300"
+            className="w-full text-black bg-white px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring focus:border-blue-300"
             placeholder="Your Email"
             value={formData.email}
             onChange={handleChange}
@@ -172,7 +172,7 @@ const SignUpForm = () => {
             type="password"
             name="password"
             id="password"
-            className="w-full px-3 py-2 border text-black border-gray-300 rounded focus:outline-none focus:ring focus:border-blue-300"
+            className="w-full px-3 py-2 bg-white border text-black border-gray-300 rounded focus:outline-none focus:ring focus:border-blue-300"
             placeholder="Your Password"
             value={formData.password}
             onChange={handleChange}
@@ -191,7 +191,7 @@ const SignUpForm = () => {
             type="password"
             name="confirmPassword"
             id="confirmPassword"
-            className="w-full px-3 text-black py-2 border border-gray-300 rounded focus:outline-none focus:ring focus:border-blue-300"
+            className="w-full px-3 bg-white text-black py-2 border border-gray-300 rounded focus:outline-none focus:ring focus:border-blue-300"
             placeholder="Confirm Password"
             value={formData.confirmPassword}
             onChange={handleChange}
@@ -212,17 +212,18 @@ const SignUpForm = () => {
         {error && <span className="text-red-500 mt-4 block">{error}</span>}
       </form>
       <div className="max-w-96 text-white text-xl">
-        Welcome to <span className="text-xl font-bold text-teal-500">MetroMingle</span>  your gateway to discovering the
-        vibrant stories and hidden gems of cities across Egypt! Our platform is
-        dedicated to bringing you the most authentic and engaging experiences
-        from people who live and breathe the essence of their cities. Whether
-        you’re a local seeking fresh perspectives or a traveler eager to explore
-        Egypt beyond the typical guidebooks, you’ll find a treasure trove of
-        blogs filled with personal anecdotes, insider tips, and breathtaking
-        visuals. Join our community of passionate storytellers and immerse
-        yourself in the rich cultural tapestry and dynamic urban life that Egypt
-        has to offer. Let’s explore, connect, and celebrate the spirit of
-        Egyptian cities together!
+        Welcome to{" "}
+        <span className="text-xl font-bold text-teal-500">MetroMingle</span>{" "}
+        your gateway to discovering the vibrant stories and hidden gems of
+        cities across Egypt! Our platform is dedicated to bringing you the most
+        authentic and engaging experiences from people who live and breathe the
+        essence of their cities. Whether you’re a local seeking fresh
+        perspectives or a traveler eager to explore Egypt beyond the typical
+        guidebooks, you’ll find a treasure trove of blogs filled with personal
+        anecdotes, insider tips, and breathtaking visuals. Join our community of
+        passionate storytellers and immerse yourself in the rich cultural
+        tapestry and dynamic urban life that Egypt has to offer. Let’s explore,
+        connect, and celebrate the spirit of Egyptian cities together!
       </div>
     </div>
   );

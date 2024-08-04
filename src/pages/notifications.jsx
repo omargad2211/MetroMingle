@@ -71,9 +71,9 @@ const NotificationsPage = () => {
   ];
 
   return (
-    <div className="flex flex-col md:flex-row min-h-screen">
+    <div className="flex  md:flex-row min-h-screen">
       {/* Left Sidebar */}
-      <aside className="w-1/5 bg-white h-screen border-r">
+      <aside className=" bg-white h-screen border-r">
         <div className="p-4">
           <h1 className="text-2xl font-bold mb-4">MetroMingle</h1>
           <nav className="space-y-2">

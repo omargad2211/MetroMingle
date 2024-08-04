@@ -222,8 +222,8 @@ const Tweet = ({
                   <svg
                     viewBox="0 0 24 24"
                     fill="currentColor"
-                    height="2.4em"
-                    width="2.4em"
+                    height="1.5em"
+                    width="1.5em"
                   >
                     <path d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
                   </svg>

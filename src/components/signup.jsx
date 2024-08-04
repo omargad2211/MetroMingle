@@ -3,7 +3,7 @@ import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { doc, setDoc } from "firebase/firestore";
 import { Link, useNavigate } from "react-router-dom";
-import { auth, db, storage } from "../firbase"; 
+import { auth, db, storage } from "../firbase";
 
 const SignUpForm = () => {
   const [img, setImg] = useState(null);
@@ -97,19 +97,19 @@ const SignUpForm = () => {
   };
 
   return (
-    <div className="flex justify-center gap-20 items-center min-h-screen text-slate-200 bg-orange-300">
+    <div className="flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-20 px-4 lg:px-10 py-10 lg:py-0 min-h-screen bg-orange-300 text-slate-200">
       <form
         onSubmit={handleRegister}
-        className="bg-teal-600 p-6 mt-7 mb-7  rounded shadow-md w-full max-w-md"
+        className="bg-teal-600 p-6 lg:p-8 rounded shadow-md w-full max-w-md"
       >
         <h2 className="text-2xl font-bold mb-6 text-center">Sign Up</h2>
 
-        <div className="mb-4">
+        <div className="mb-4 flex justify-center">
           <label htmlFor="file">
             <img
               src={img ? URL.createObjectURL(img) : "/assets/OIP.jpeg"}
               alt="Profile Preview"
-              className="rounded-full w-14 cursor-pointer mb-4"
+              className="rounded-full w-16 h-16 cursor-pointer mb-4"
             />
           </label>
           <input
@@ -196,17 +196,23 @@ const SignUpForm = () => {
 
         <div className="flex justify-between items-center mt-6">
           <Link to="/">
-            <button type="button" className="btn bg-orange-600 text-white">
+            <button
+              type="button"
+              className="btn bg-orange-600 text-white hover:bg-orange-500"
+            >
               Cancel
             </button>
           </Link>
-          <button type="submit" className="btn text-white bg-teal-400">
+          <button
+            type="submit"
+            className="btn text-white bg-teal-400 hover:bg-teal-300"
+          >
             Sign Up
           </button>
         </div>
         {error && <span className="text-red-500 mt-4 block">{error}</span>}
       </form>
-      <div className="max-w-96 text-white text-xl">
+      <div className="max-w-96 text-white text-xl lg:text-base lg:max-w-lg lg:w-full px-4 text-center lg:text-left lg:px-0">
         Welcome to{" "}
         <span className="text-xl font-bold text-teal-500">MetroMingle</span>{" "}
         your gateway to discovering the vibrant stories and hidden gems of

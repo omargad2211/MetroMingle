@@ -134,7 +134,7 @@ export default function Nav() {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className=" lg:hidden">
-          <div className="flex absolute top-16 left-0 bg-orange-700/75 alp flex-col flex-1 w-full items-center space-y-4 ">
+          <div className="flex z-10 absolute top-16 left-0 bg-orange-700/75 alp flex-col flex-1 w-full items-center space-y-4 ">
             <NavLink
               to="/posts"
               className="btn btn-ghost items-center text-lg flex hover:text-orange-500 gap-3"

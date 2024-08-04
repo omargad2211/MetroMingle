@@ -3,7 +3,7 @@ import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { doc, setDoc } from "firebase/firestore";
 import { Link, useNavigate } from "react-router-dom";
-import { auth, db, storage } from "../firbase"; // Ensure this path is correct
+import { auth, db, storage } from "../firbase"; 
 
 const SignUpForm = () => {
   const [img, setImg] = useState(null);
